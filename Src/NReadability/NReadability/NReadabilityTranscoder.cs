@@ -826,7 +826,7 @@ namespace NReadability
                       var paraElement = new XElement("p");
 
                       // note that we're not using GetInnerText() here; instead we're getting raw InnerText to preserve whitespaces
-                      paraElement.SetInnerHtml(((XText)childNode).Value);
+                      paraElement.SetInnerHtml(((XText)childNode).Value.Replace("<", "&lt;").Replace(">", "&gt;"));
 
                       paraElement.SetClass(ReadabilityStyledCssClass);
                       paraElement.SetStyle("display: inline;");
