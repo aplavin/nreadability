@@ -58,8 +58,8 @@
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.TestReplacingImageUrls" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="TestReplacingImageUrls" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.TestReplacingLinksUrls" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="TestReplacingLinksUrls" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.TestReplacingQueryStringLinkUrls" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="TestReplacingQueryStringLinkUrls" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
-        <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.TestSampleInputs" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="TestSampleInputs" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityWebTranscoderTests.TestSampleInputs" ParentId="NReadability.Tests.NReadabilityWebTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityWebTranscoderTests" MethodName="TestSampleInputs" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
+        <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.TestSampleInputs" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="TestSampleInputs" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.Text_nodes_within_a_div_with_block_elements_should_be_replaced_with_paragraphs" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="Text_nodes_within_a_div_with_block_elements_should_be_replaced_with_paragraphs" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.Top_candidate_element_should_be_possible_to_determine_even_if_body_is_not_present" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="Top_candidate_element_should_be_possible_to_determine_even_if_body_is_not_present" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
         <UnitTestElement Provider="nUnit" Id="NReadability.Tests.NReadabilityTranscoderTests.Unlikely_candidates_should_be_removed" ParentId="NReadability.Tests.NReadabilityTranscoderTests" type="NUnitTestElement" TypeName="NReadability.Tests.NReadabilityTranscoderTests" MethodName="Unlikely_candidates_should_be_removed" Project="78EC35EB-C37A-4A7F-A87B-6F65335A8177" />
@@ -69,37 +69,110 @@
   </UnitTestSessions>
   <RecentFiles>
     <RecentFiles>
-      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:NReadabilityWebTranscoder.cs" caret="4126" fromTop="25" />
-      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="1179" fromTop="25" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:NReadabilityWebTranscoder.cs" caret="4232" fromTop="17" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:NReadabilityTranscoder.cs" caret="41835" fromTop="12" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:Consts.cs" caret="408" fromTop="19" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UtilityExtensions.cs" caret="879" fromTop="18" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:DomSerializationParams.cs" caret="0" fromTop="0" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:app.config" caret="0" fromTop="0" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/d:SampleWebInput/f:SampleInput_01_1.html" caret="0" fromTop="0" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/d:SampleInput/f:SampleInput_01.html" caret="0" fromTop="0" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityWebTranscoderTests.cs" caret="0" fromTop="0" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:DomExtensions.cs" caret="6510" fromTop="14" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityTranscoderTests.cs" caret="23154" fromTop="29" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="655" fromTop="13" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="1191" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
-      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="1429" fromTop="31" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="1384" fromTop="12" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="1309" fromTop="10" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:DomExtensions.cs" caret="8925" fromTop="26" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:DomExtensions.cs" caret="8925" fromTop="23" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:DomExtensions.cs" caret="6954" fromTop="25" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="1679" fromTop="8" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="1679" fromTop="5" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:DomExtensions.cs" caret="6936" fromTop="22" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="1679" fromTop="12" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityTranscoderTests.cs" caret="40764" fromTop="9" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityTranscoderTests.cs" caret="40764" fromTop="18" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityTranscoderTests.cs" caret="40764" fromTop="30" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityTranscoderTests.cs" caret="40764" fromTop="27" />
+      <File id="78EC35EB-C37A-4A7F-A87B-6F65335A8177/f:NReadabilityTranscoderTests.cs" caret="23154" fromTop="29" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="745" fromTop="2" />
+      <File id="0CCC740D-2907-437B-B5FF-F473DFA02382/f:UrlFetcher.cs" caret="1071" fromTop="13" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="1679" fromTop="30" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="1679" fromTop="30" />
+      <File id="454B52EC-4B9C-46EA-A088-DC1518F28C4C/f:Program.cs" caret="655" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="NReadabilityWebTranscoder" priority="28" />
-      <Item value="out" priority="31" />
-      <Item value="bool" priority="31" />
-      <Item value="string" priority="31" />
+      <Item value="NReadabilityWebTranscoder" priority="57" />
+      <Item value="out" priority="63" />
+      <Item value="bool" priority="63" />
+      <Item value="string" priority="95" />
       <Item value="EncodingTools" priority="62" />
       <Item value="EncodingTools`0" priority="53" />
-      <Item value="using" priority="30" />
+      <Item value="using" priority="62" />
       <Item value="BufferedStream" priority="28" />
       <Item value="MemoryStream" priority="28" />
-      <Item value="var" priority="31" />
-      <Item value="new" priority="31" />
+      <Item value="var" priority="95" />
+      <Item value="new" priority="95" />
       <Item value="netStream" priority="31" />
-      <Item value="memStream" priority="31" />
+      <Item value="memStream" priority="127" />
+      <Item value="detector" priority="95" />
+      <Item value="ICharsetDetector`0" priority="31" />
+      <Item value="SeekOrigin`0" priority="31" />
+      <Item value="stream" priority="31" />
+      <Item value="seekStream" priority="31" />
+      <Item value="try" priority="31" />
+      <Item value="public" priority="62" />
+      <Item value="static" priority="31" />
+      <Item value="return" priority="63" />
+      <Item value="if" priority="63" />
+      <Item value="thr" priority="31" />
+      <Item value="Exception" priority="29" />
+      <Item value="s" priority="95" />
+      <Item value="char" priority="31" />
+      <Item value="ch" priority="127" />
+      <Item value="StreamUtils`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NReadability.NReadabilityWebTranscoder">
-      <Item value="Transcode`0" priority="26" />
+      <Item value="Transcode`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@EncodingTools.EncodingTools">
       <Item value="OpenTextStream`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.Stream">
       <Item value="CopyTo`0" priority="22" />
+      <Item value="ToSeekable`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ude.CharsetDetector">
+      <Item value="Feed`0" priority="26" />
+      <Item value="DataEnd`0" priority="26" />
+      <Item value="Charset" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="GetEncoding`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.MemoryStream">
+      <Item value="Seek`0" priority="26" />
+      <Item value="GetReaderAuto`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.SeekOrigin">
+      <Item value="Begin" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Regex">
+      <Item value="IsMatch`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Length" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Char">
+      <Item value="IsLower`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="CompareTo`0" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

@@ -365,7 +365,7 @@ namespace NReadability.Tests
         [Test]
         [Sequential]
         // TODO: if time, add test case 7 (the sample is already in the repo but needs fixing)
-        public void TestSampleInputs([Values(1, 2, 3, 4, 5, 6, 8, 9, 10)]int sampleInputNumber)
+        public void TestSampleInputs([Values(1, 2, 3, 4, 5, 6, 8, 9, 10, 11)]int sampleInputNumber)
         {
             string sampleInputNumberStr = sampleInputNumber.ToString().PadLeft(2, '0');
             string content = File.ReadAllText(string.Format(@"SampleInput\SampleInput_{0}.html", sampleInputNumberStr));
@@ -441,7 +441,13 @@ namespace NReadability.Tests
                     break;
 
                 case 10:  // http://podrobnosti.ua/internet/2011/08/04/784251.html
-                    // TODO: asserts. Now it only checks that no exceptions happened
+                    Assert.IsTrue(mainContentExtracted);
+                    // TODO: asserts
+                    break;
+
+                case 11:  // http://podrobnosti.ua/sports/2011/07/29/783215.html
+                    Assert.IsTrue(mainContentExtracted);
+                    // TODO: asserts
                     break;
 
                 default:

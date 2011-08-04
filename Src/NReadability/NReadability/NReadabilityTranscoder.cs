@@ -139,7 +139,7 @@ namespace NReadability
 
     private bool _dontStripUnlikelys;
     private readonly bool _dontNormalizeSpacesInTextContent;
-    private readonly bool _dontWeightClasses;
+    private bool _dontWeightClasses;
     private readonly ReadingStyle _readingStyle;
     private readonly ReadingSize _readingSize;
     private readonly ReadingMargin _readingMargin;
@@ -313,19 +313,32 @@ namespace NReadability
       // fallback behaviour - rerun one more time with _dontStripUnlikelys if we have little content
       if (!_dontStripUnlikelys && GetInnerText(articleContentElement).Length < 250)
       {
-        try
-        {
-          _dontStripUnlikelys = true;
+          try
+          {
+              _dontStripUnlikelys = true;
 
-          return TranscodeToXml(htmlContent, url, out mainContentExtracted, out nextPageUrl);
-        } 
-        finally
-        {
-          _dontStripUnlikelys = false;
-        }
+              return TranscodeToXml(htmlContent, url, out mainContentExtracted, out nextPageUrl);
+          }
+          finally
+          {
+              _dontStripUnlikelys = false;
+          }
       }
 
-      // TODO: implement another fallback behaviour - rerun one more time with _dontWeightClasses
+      // fallback behaviour - rerun one more time with _dontWeightClasses if we have little content
+      if (!_dontWeightClasses && GetInnerText(articleContentElement).Length < 250)
+      {
+          try
+          {
+              _dontWeightClasses = true;
+
+              return TranscodeToXml(htmlContent, url, out mainContentExtracted, out nextPageUrl);
+          }
+          finally
+          {
+              _dontWeightClasses = false;
+          }
+      }
 
       mainContentExtracted = !articleContentElement.IsEmpty;
 

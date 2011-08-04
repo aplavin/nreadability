@@ -22,6 +22,9 @@ using System.Net;
 
 namespace NReadability
 {
+    using System.IO;
+    using System.Text;
+
     /// <summary>
     /// Fetches web content.
     /// </summary>
@@ -38,9 +41,21 @@ namespace NReadability
             using (var resp = fetchRequest.GetResponse())
             using (var stream = resp.GetResponseStream())
             using (var seekStream = stream.ToSeekable())
-            using (var reader = seekStream.GetReaderAuto())
+            using (var reader = seekStream.GetReader())
             {
-                return reader.ReadToEnd();
+                Encoding encoding = null;
+                string data = reader.ReadToEnd();
+                if (data.Contains("charset="))
+                {
+                    string charset = data.GetBetween("charset=", "\"");
+                    encoding = Encoding.GetEncoding(charset);
+                }
+
+                seekStream.Seek(0, SeekOrigin.Begin);
+                using (var readerEnc = seekStream.GetReader(encoding))
+                {
+                    return readerEnc.ReadToEnd();
+                }
             }
         }
 
