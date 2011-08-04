@@ -18,31 +18,32 @@
  * limitations under the License.
  */
 
-using System.IO;
 using System.Net;
 
 namespace NReadability
 {
-  /// <summary>
-  /// Fetches web content.
-  /// </summary>
-  public class UrlFetcher : IUrlFetcher
-  {
-    #region IUrlFetcher members
-
-    public string Fetch(string url)
+    /// <summary>
+    /// Fetches web content.
+    /// </summary>
+    public class UrlFetcher : IUrlFetcher
     {
-      var fetchRequest = (HttpWebRequest)WebRequest.Create(url);      
-      
-      fetchRequest.Method = "GET";
-      
-      using (var resp = fetchRequest.GetResponse()) 
-      using (var reader = new StreamReader(resp.GetResponseStream(), true))
-      {
-        return reader.ReadToEnd();
-      }
-    }
+        #region IUrlFetcher members
 
-    #endregion
-  }
+        public string Fetch(string url)
+        {
+            var fetchRequest = (HttpWebRequest)WebRequest.Create(url);
+
+            fetchRequest.Method = "GET";
+
+            using (var resp = fetchRequest.GetResponse())
+            using (var stream = resp.GetResponseStream())
+            using (var seekStream = stream.ToSeekable())
+            using (var reader = seekStream.GetReaderAuto())
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        #endregion
+    }
 }
